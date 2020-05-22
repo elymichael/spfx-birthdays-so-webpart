@@ -9,6 +9,7 @@ Para sincronizar los datos desde el sistema de recursos humanos, creamos un serv
 
 ![Birthdays Web Part](./assets/birthdays.gif)
 
+Debajo la imagen del control montado en un sharepoint online con las mejoras realizadas sobre el control realizado por Joao Mendes.
 ![Birthdays Web Part](./assets/birthdays.png)
 
 
