@@ -1,15 +1,11 @@
 # React Birthdays Web Part
 
 ## Summary
-The Web Part Birthdays shows the upcoming birthdays in the company, the web part reads birthdays from a list located on the tenant's root site with title "Birthdays."
+El Web Part de cumpleaños muestra los próximos cumpleaños a celebrarse en los días próximos en una compañía mediante la lectura de la base de datos de cumpleaños cargados a sharepoint a una lista en el tenant's root de sharepoint online con el nombre de "Birthdays."
 
-Now is possible to the user select an image for the background in the properties of the webpart.
+Si los usuarios se encuentan disponibles el office365 es posible leer su fotografía y mostrarla en el componente utilizando webpart persona de [ui-office-fabric](https://developer.microsoft.com/en-us/fabric-js/components/persona/persona).
 
-
-There is an Azure function available that get AAD user birthdays, this function creates a list on the tenant root site, if it does not exist.
-See the local.settings.json for details on the required application variable located in SyncUsersBirthdaysFunction folder.
-
-But you can synchronize the Birthdays list with other applications HR Systems, or other sources
+Para sincronizar los datos desde el sistema de recursos humanos, creamos un servicio de consola en .Net que se encarga de tomar todos los datos y subirlo e la lista del tenant's root.
 
 ![Birthdays Web Part](./assets/birthdays.gif)
 
@@ -27,30 +23,16 @@ But you can synchronize the Birthdays list with other applications HR Systems, o
 
 ## Prerequisites
  
-Existing list in tenant root site, with the Title "Birthdays"  and columns:
+La lista en el sitio de tenant root debe tener de título "Birthdays"  con la siguiente estructura:
 
-Column Internal Name|Type|Required| comments
+Columna|Tipo|Requerido|Descripción
 --------------------|----|--------|----------
 JobTitle| Text| no|
 Birthday| DateTime | true|
-userAADGUID| Text| no | required if used Azure Function to get Birthdays from AAD
+userAADGUID| Text| no | 
 Title| Text| true
 email| Text| true
 
-## After create a column Index on column "Birthday" - Important!
-
-## Solution
-
-Solution|Author(s)
---------|---------
-react Birthday Web Part|João Mendes
-
-## Version history
-
-Version|Date|Comments
--------|----|--------
-1.0.0|November 6, 2018|Initial release
-1.1.0|July 23, 2019 | new version
 
 ## Disclaimer
 **THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
@@ -59,8 +41,8 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome - please follow all the steps.
 
-- Clone this repository
-- in the command line run:
+- Clone el repositorio
+- Ejecute en la línea de comando los siguientes comandos:
   - `npm install`
   - `gulp build`
   - `gulp bundle --ship`
@@ -71,15 +53,8 @@ Version|Date|Comments
  
 
 ## Features
-This project contains sample Birthday web parts built on the SharePoint Framework using React
-and an Azure Function to get user Birthdays from AAD.
-This sample illustrates the following concepts on top of the SharePoint Framework:
 - using React for building SharePoint Framework client-side web parts
 - using React components for building Birthday web part
 - using MSGraph API to get data from SharePoint Lists 
 - using MSGraph API to read users from AAD
 - using @PnP/PnPjs to create a List, add, update, delete Items.
- 
-
-<img src="https://telemetry.sharepointpnp.com/sp-dev-fx-webparts/samples/react-birthdays" />
-
