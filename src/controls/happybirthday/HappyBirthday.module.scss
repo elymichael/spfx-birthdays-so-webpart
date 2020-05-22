@@ -1,0 +1,43 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.happyBirthday {
+  .backgroundImgBallons{
+    text-align: center;
+    text-align: -webkit-center;
+    opacity: 0.23;
+  }
+  .documentCard {
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 420px;
+    min-width: 300px;
+    min-height: 190px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    opacity: 0.2;
+  }
+  .documentCard:hover{
+    border-color: #c8c8c8;
+  }
+  .documentCardWrapper {
+   margin-top: 15px;
+   min-Width: 300px;
+   width: 300px;
+   min-height: 190px;
+   margin-right: 15px;
+   position: relative;
+   text-align: center;
+  }
+
+  .container {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0px auto;
+  }
+}

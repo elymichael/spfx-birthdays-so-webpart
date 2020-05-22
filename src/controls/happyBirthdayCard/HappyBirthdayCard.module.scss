@@ -1,0 +1,120 @@
+@import "~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss";
+
+.happyBirdthay {
+  .documentCard {
+    -webkit-font-smoothing: antialiased;
+    background-color: #ffffff;    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 320px;
+    min-width: 200px;
+    min-height: 200px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+  }
+
+  .documentCardBD {
+    -webkit-font-smoothing: antialiased;
+    background-color: $ms-color-themePrimary;
+    border: 0px solid $ms-color-themePrimary;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: 320px;
+    min-width: 200px;
+    min-height: 200px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    display: inline-block;
+  }
+
+  .documentCard:hover {
+    border-color: #c8c8c8;
+  }
+  .documentCardWrapper {
+    margin-top: 15px;
+    min-width: 200px;
+    width: 200px;
+    min-height: 200px;
+    margin-right: 15px;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+  }
+  .container {
+    max-width: 700px;
+    margin: 0px auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+  .firstblock {
+    min-height: 100px;
+    background-color: $ms-color-themeLighterAlt;
+    position: relative;
+
+    .backgroundimage {
+      width: 195px;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: contain;
+    }
+  }
+
+  .secondblock {
+    min-height: 85px;
+    background-color: $ms-color-themeTertiary;
+    position: relative;
+    width: 100%;
+    .label {
+      position: absolute;
+      bottom: 10px;
+      width: 100%;
+      margin-left: -100px;
+      color: $ms-color-themeDarker;
+      font-size: $ms-font-size-l;
+      font-weight: bolder;
+      text-transform: uppercase;
+    }
+  }
+
+  .thirdblock {
+    min-height: 55px;
+    position: relative;
+    width: 195px;
+    padding: 10px 5px 5px 5px;
+    .labelname {
+      width: 195px;
+      color: $ms-color-themeDarker;
+      font-size: $ms-font-size-m;
+      font-weight: bolder;
+      text-transform: uppercase;
+      overflow: hidden;
+      white-space: nowrap; /* Don't forget this one */
+      text-overflow: ellipsis;
+    }
+    .labelposition {
+      width: 100%;
+      color: $ms-color-themeDarker;
+      text-transform: uppercase;
+      font-size: 10px;
+      overflow: hidden;
+      white-space: nowrap; /* Don't forget this one */
+      text-overflow: ellipsis;
+    }
+  }
+
+  .persona {
+    position: absolute;
+    top: 75px;
+    max-width: 300px;
+    z-index: 100;
+    margin-left: 65px;
+  }
+}

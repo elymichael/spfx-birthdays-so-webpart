@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "GraphClientId": "",
+    "GraphClientSecret": "",
+    "TenantId": "",
+    "TenantUrl": "https://dgcpgovdo.sharepoint.com",
+    "BirthdayListTitle": "Birthdays"
+  }
+}
