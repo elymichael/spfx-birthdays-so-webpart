@@ -58,3 +58,5 @@ email| Text| true
 - using MSGraph API to get data from SharePoint Lists 
 - using MSGraph API to read users from AAD
 - using @PnP/PnPjs to create a List, add, update, delete Items.
+
+Basado en la librería de Joao Mendes publicado en el siguiente [enlace](https://techcommunity.microsoft.com/t5/sharepoint-developer/employee-birthday-calendar-web-part/td-p/454251)
